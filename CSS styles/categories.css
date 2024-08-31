@@ -1,0 +1,168 @@
+:root {
+  --margin-s: 4rem;
+}
+hr {
+  border: 0.7rem solid var(--clr-lightblue);
+  width: min(25%, 7rem);
+  margin: 0 auto 2em auto;
+}
+h1 {
+  font-size: var(--h1-size);
+}
+h2 {
+  font-size: var(--h2-size);
+}
+h3 {
+  font-size: var(--h3-size);
+}
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+body {
+  font-size: var(--p-size);
+}
+.intro {
+  background-color: var(--clr-midblue);
+}
+
+.intro-text {
+  max-width: 75ch;
+  padding: 2em 10%;
+}
+
+.intro-text h1 {
+  color: var(--clr-white);
+}
+.intro-text h1 span {
+  color: var(--clr-lightblue);
+}
+.intro-text p {
+  color: var(--clr-white);
+  font-size: var(--small-size);
+  padding-bottom: 10%;
+}
+.nav-sub {
+  padding-bottom: 2em;
+}
+.species {
+  padding: 2em 10%;
+  display: grid;
+  gap: 1em;
+}
+.species h2 {
+  text-transform: uppercase;
+  padding-bottom: 1em;
+}
+.species h3 {
+  padding-top: 1.5em;
+}
+
+.pics {
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  align-items: start;
+}
+.pics img,
+.pics iframe {
+  flex: 1;
+  width: 100%;
+  max-width: 400px;
+}
+
+iframe {
+  height: 100%;
+  min-height: 320px;
+  border: none;
+}
+.species ul {
+  margin: 0;
+}
+
+/*table*/
+table {
+  border-spacing: 4px;
+}
+.table {
+  width: 99%;
+  margin-inline: 1%;
+  overflow-x: scroll;
+}
+thead {
+  color: white;
+  text-transform: uppercase;
+}
+caption {
+  text-align: left;
+  color: var(--clr-dark);
+  text-transform: uppercase;
+}
+
+th,
+td {
+  border: 1px solid #e7e7e7;
+  padding: 0.2em 1em;
+  border-radius: 5px;
+}
+
+.t-image {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+.image-col {
+  padding: 0;
+  margin: 0;
+  max-width: 200px;
+  max-height: 20px;
+}
+
+thead {
+  background-color: var(--clr-darkblue);
+  color: white;
+}
+.name-col a {
+  color: var(--clr-selectaccent);
+
+  font-weight: 900;
+}
+.name-col span {
+  font-size: var(--small-size);
+  font-style: italic;
+}
+/*.name-col,
+.status-col,
+.location-col {
+  background-color: var(--clr-white);
+}*/
+.r1 {
+  background-color: #def6f8;
+}
+.r2 {
+  background-color: #f0f0f0;
+}
+@media only screen and (width<481) {
+}
+@media only screen and (width>= 481px) {
+  hr {
+    margin-left: 0;
+    border-width: 0.8rem;
+  }
+}
+@media only screen and (width>= 768px) {
+  .pics {
+    flex-direction: row;
+  }
+}
+@media only screen and (width>= 993px) {
+  .table {
+    width: auto;
+    margin-inline: 10%;
+  }
+}
+
+@media only screen and (width>= 1201px) {
+}

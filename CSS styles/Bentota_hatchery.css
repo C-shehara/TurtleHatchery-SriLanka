@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat");
+:root {
+  --h1-size: 3rem;
+}
+h1 {
+  font-size: var(--h1-size);
+}
+h2 {
+  font-size: var(--h2-size);
+}
+h3 {
+  font-size: var(--h3-size);
+}
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #f5f5f5;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  margin: 20px 0 0;
+}
+
+.hero-image {
+  max-width: 100%;
+  aspect-ratio: 2/0.5;
+  object-fit: cover;
+}
+/*animation*/
+.hero-text h1 {
+  animation-name: scale-up;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes scale-up {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* About Section */
+.about {
+  padding: 100px 0;
+  background-image: url(../Assets/kiabout.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.about-text {
+  background-color: rgba(0, 0, 0, 75%);
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 20px 0;
+}
+
+.about-img {
+  display: none;
+  /* width: 100%;
+  max-width: 350px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;*/
+}
+
+/* Gallery Section */
+.gallery {
+  background-color: #f5f5f5;
+  padding: 100px 0;
+}
+
+.g-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.g-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  /*animation*/
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.gallery img:hover {
+  transform: rotate(5deg);
+}
+
+/* Contact Section */
+.contact {
+  background-color: #ffffff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.c-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.c-title-loc,
+.c-title-cont {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.c-loc,
+.c-cont {
+  font-size: 1rem;
+  margin: 0;
+}
+@media only screen and (width<481) {
+}
+@media only screen and (width>= 481px) {
+  .g-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (width>= 768px) {
+  .g-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (width>= 993px) {
+}
+
+@media only screen and (width>= 1201px) {
+}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Tickets</title>
+    <link rel="stylesheet" href="./CSS styles/general.css" />
+    <link rel="stylesheet" href="./CSS styles/tickets.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#191970" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <!--desktop logo-->
+        <div class="logo-container">
+          <a href="./index.html"
+            ><img src="./Assets/logo.png" alt="Save Turtles logo" class="logo"
+          /></a>
+        </div>
+
+        <nav class="nav">
+          <a href="./index.html">Home</a>
+
+          <a href="./categories.html">Categories</a>
+
+          <a href="./Hikkaduwa_hatchery.html">Hikkaduwa</a>
+
+          <a href="./threats.html">Threats</a>
+
+          <a href="./purchase-donate.html">Purchase & Donate</a>
+        </nav>
+        <a href="./purchase-donate.html" class="donate-button">
+          <button>
+            <p class="donate-text">DONATE</p>
+            <img class="heart" src="./Assets/heart icon.png" alt="heart" />
+          </button>
+        </a>
+        <!--mobile header-->
+        <div class="mobile-nav">
+          <input type="checkbox" name="menu-toggle" id="menu-toggle" />
+          <label for="menu-toggle" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </label>
+
+          <nav class="dropdown-menu">
+            <a href="./index.html">Home</a>
+
+            <a href="./categories.html">Categories</a>
+
+            <a href="./Hikkaduwa_hatchery.html">Hikkaduwa</a>
+
+            <a href="./threats.html">Threats</a>
+
+            <a href="./purchase-donate.html">Purchase & Donate</a>
+            <a href="./purchase-donate.html" class="donate-button">
+              <button>
+                <p class="donate-text">DONATE</p>
+                <img class="heart" src="./Assets/heart icon.png" alt="heart" />
+              </button>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!--Heading-->
+    <div class="head">
+      <hr />
+      <h1>Buy <span>Tickets</span></h1>
+    </div>
+    <!--Breadcrumbs navigation-->
+    <div class="sub-nav">
+      <a class="link" id="tickets" href="./tickets.html">Tickets</a> >
+      <a class="link" id="details" href="./details.html">Details</a> >
+      <a class="link" id="payments" href="./payments.html">Payments</a> >
+      <a class="link" id="confirm" href="./confirmation.html">Confirmation</a>
+    </div>
+    <!--
+    <div class="sub-nav">
+      <div>
+        <img class="progress" src="./Assets/1st-select.png" alt="Number one" />
+        <a class="link" id="tickets" href="./tickets.html">Tickets</a>
+      </div>
+      <div>
+        <img class="progress" src="./Assets/2nd.png" alt="Number two" />
+        <a class="link" id="details" href="./details.html">Details</a>
+      </div>
+      <div>
+        <img class="progress" src="./Assets/3rd.png" alt="Number three" />
+        <a class="link" id="payments" href="./payments.html">Payments</a>
+      </div>
+      <div>
+        <img class="progress" src="./Assets/4th.png" alt="Number four" />
+        <a class="link" id="confirm" href="./confirmation.html">Confirmation</a>
+      </div>
+    </div>
+    <div class="progress-bar">
+      <div class="steps">
+        <div class="step first">1</div>
+        <div class="step second">2</div>
+        <div class="step third">3</div>
+        <div class="step fourth">4</div>
+      </div>
+    </div>-->
+
+    <main>
+      <div class="form">
+        <!--Dates-->
+        <section id="dates-sec">
+          <h2>Date</h2>
+          <label for="date">Choose Visit Date:</label>
+          <input type="date" id="date" name="date" required />
+        </section>
+
+        <!--Guests-->
+        <section class="guests-sec">
+          <h2>Guests</h2>
+          <form class="guests">
+            <div class="ticket-category">
+              <label for="slAdult">SL Adult:</label>
+              <input
+                type="number"
+                id="slAdult"
+                name="slAdult"
+                min="0"
+                value="0"
+              />
+            </div>
+            <div class="ticket-category">
+              <label for="slChild">SL Child:</label>
+              <input
+                type="number"
+                id="slChild"
+                name="slChild"
+                min="0"
+                value="0"
+              />
+            </div>
+            <div class="ticket-category">
+              <label for="foreignerAdult">Foreigner Adult:</label>
+              <input
+                type="number"
+                id="foreignerAdult"
+                name="foreignerAdult"
+                min="0"
+                value="1"
+              />
+            </div>
+            <div class="ticket-category">
+              <label for="foreignerChild">Foreigner Child:</label>
+              <input
+                type="number"
+                id="foreignerChild"
+                name="foreignerChild"
+                min="0"
+                value="0"
+              />
+            </div>
+            <div class="ticket-category">
+              <label for="infant">Infant:</label>
+              <input
+                type="number"
+                id="infant"
+                name="infant"
+                min="0"
+                value="0"
+              />
+            </div>
+          </form>
+        </section>
+
+        <section id="duration-sec">
+          <h2>Visit time</h2>
+          <p>
+            Choose either a single one-hour time slot or multiple consecutive
+            one-hour time slots for your visit.
+          </p>
+          <select name="duration" id="durationSelect" size="0" multiple>
+            <option value="07.00 am to 08.00 am">07.00 am - 08.00 am</option>
+            <option value="08.00 am to 09.00 am">08.00 am - 09.00 am</option>
+            <option value="09.00 am to 10.00 am">09.00 am - 10.00 am</option>
+            <option value="10.00 am to 11.00 am">
+              10.00 am - 11.00 am (Peak hour)
+            </option>
+            <option value="11.00 am to 12.00 pm">
+              11.00 am - 12.00 pm (Peak hour)
+            </option>
+            <option value="12.00 pm to 01.00 pm">
+              12.00 pm - 01.00 pm (Peak hour)
+            </option>
+            <option value="01.00 pm to 02.00 pm">01.00 pm - 02.00 pm</option>
+            <option value="02.00 pm to 03.00 pm">02.00 pm - 03.00 pm</option>
+            <option value="03.00 pm to 04.00 pm">
+              03.00 pm - 04.00 pm (Peak hour)
+            </option>
+            <option value="04.00 pm to 05.00 pm">
+              04.00 pm - 05.00 pm (Peak hour)
+            </option>
+            <option value="05.00 pm to 06.00 pm">
+              05.00 pm - 06.00 pm (Peak hour)
+            </option>
+          </select>
+          <div id="pricingTable">
+            <table>
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Normal Hour Charge (USD)</th>
+                  <th>Peak Hour Charge (USD)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>SL Adult</td>
+                  <td>4</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>SL Child</td>
+                  <td>2</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>Foreigner Adult</td>
+                  <td>10</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>Foreigner Child</td>
+                  <td>5</td>
+                  <td>8</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+
+      <aside class="right">
+        <h2>Summary</h2>
+        <table class="summary">
+          <tr>
+            <th>Date</th>
+            <td id="summaryDate"><!--current date--></td>
+          </tr>
+          <tr>
+            <th>Time</th>
+            <td id="summaryTime">Time</td>
+          </tr>
+          <tr>
+            <th>Duration</th>
+            <td id="summaryDuration">1 hrs ( 01 Normal : 00 Peak)</td>
+          </tr>
+          <tr>
+            <th class="th">Tickets</th>
+            <th class="th">Charges</th>
+          </tr>
+          <tr>
+            <td id="summaryGuests">1 Foreign Adult</td>
+
+            <td id="summaryCharges">$10</td>
+          </tr>
+
+          <tr>
+            <th class="th">Total Payable</th>
+            <td id="summaryTotalPayable"></td>
+          </tr>
+        </table>
+      </aside>
+      <button id="continueBtn" disabled>Continue with purchase</button>
+    </main>
+    <footer>
+      <div class="f-social">
+        <a href="https://twitter.com/" target="_blank"
+          ><img src="./Assets/twitter.png" alt="twitter logo"
+        /></a>
+        <a href="https://web.facebook.com/ " target="_blank"
+          ><img src="./Assets/facebook.png" alt="facebook logo"
+        /></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img src="./Assets/instagram.png" alt="instagram logo"
+        /></a>
+
+        <a href="https://www.youtube.com/" target="_blank"
+          ><img src="./Assets/youtube.png" alt="youtube logo"
+        /></a>
+      </div>
+      <div class="f-nav">
+        <a href="./index.html">Home</a>
+        <a href="./categories.html">Categories</a>
+        <a href="./Hikkaduwa_hatchery.html">Hikkaduwa</a>
+        <a href="./threats.html">Threats</a>
+        <a href="./purchase-donate.html">Store</a>
+        <a href="./purchase-donate.html£donate">Donate </a>
+      </div>
+      <div>Site by CB009832</div>
+    </footer>
+
+    <script src="./tickets.js"></script>
+  </body>
+</html>

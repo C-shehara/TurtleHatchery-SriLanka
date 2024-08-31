@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Tickets | Details</title>
+    <link rel="stylesheet" href="./CSS styles/general.css" />
+    <link rel="stylesheet" href="./CSS styles/details.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <!--desktop logo-->
+        <div class="logo-container">
+          <a href="./index.html"
+            ><img src="./Assets/logo.png" alt="Save Turtles logo" class="logo"
+          /></a>
+        </div>
+
+        <nav class="nav">
+          <a href="./index.html">Home</a>
+
+          <a href="./categories.html">Categories</a>
+
+          <a href="./Hikkaduwa_hatchery.html">Hikkaduwa</a>
+
+          <a href="./threats.html">Threats</a>
+
+          <a href="./purchase-donate.html">Purchase & Donate</a>
+        </nav>
+        <a href="./purchase-donate.html" class="donate-button">
+          <button>
+            <p class="donate-text">DONATE</p>
+            <img class="heart" src="./Assets/heart icon.png" alt="heart" />
+          </button>
+        </a>
+        <!--mobile header-->
+        <div class="mobile-nav">
+          <input type="checkbox" name="menu-toggle" id="menu-toggle" />
+          <label for="menu-toggle" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </label>
+
+          <nav class="dropdown-menu">
+            <a href="./index.html">Home</a>
+
+            <a href="./categories.html">Categories</a>
+
+            <a href="./Hikkaduwa_hatchery.html">Hikkaduwa</a>
+
+            <a href="./threats.html">Threats</a>
+
+            <a href="./purchase-donate.html">Purchase & Donate</a>
+            <a href="./purchase-donate.html" class="donate-button">
+              <button>
+                <p class="donate-text">DONATE</p>
+                <img class="heart" src="./Assets/heart icon.png" alt="heart" />
+              </button>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!--Heading-->
+    <div class="head">
+      <hr />
+      <h1>Buy <span>Tickets</span></h1>
+    </div>
+    <!--Breadcrumbs navigation-->
+    <div class="sub-nav">
+      <span id="tickets">Tickets</span> > <span id="details">Details</span> >
+      <span id="payments">Payments</span> >
+      <span id="confirm">Confirmation</span>
+    </div>
+    <!--
+      <div class="steps">
+        <div class="item">
+          <div class="step first">✓</div>
+          Tickets
+        </div>
+        <div class="step second">2</div>
+        <div class="step third">3</div>
+        <div class="step fourth">4</div>
+      </div>
+    -->
+    <main>
+      <!--Details-->
+      <section class="details-sec">
+        <h2>Enter your details</h2>
+        <form id="detailsForm">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required />
+          <span id="fullNameError" class="errorMsg"></span>
+          <label for="mobileNumber">Mobile Number:</label>
+          <div class="mobile-input">
+            <input
+              name="mobileNumber"
+              type="text"
+              id="mobileNumber"
+              name="mobileNumber"
+              maxlength="10"
+              minlength="10"
+              required
+            />
+
+            <span id="mobileNumberError" class="errorMsg"></span>
+          </div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <span id="emailError" class="errorMsg"></span>
+          <label for="confirmEmail">Confirm Email:</label>
+          <input type="email" id="confirmEmail" name="confirmEmail" required />
+          <span id="confirmEmailError" class="errorMsg"></span>
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender">
+            <option disabled selected>Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Unspecified">Prefer not to say</option>
+          </select>
+        </form>
+      </section>
+
+      <!--aside-->
+
+      <aside class="right">
+        <h2>Summary</h2>
+        <table class="summary">
+          <tr>
+            <th>Date</th>
+            <td id="currentDateTable"><!--current date-->current date</td>
+          </tr>
+          <tr>
+            <th>Time</th>
+            <td id="timeTable">Time</td>
+          </tr>
+          <tr>
+            <th>Duration</th>
+            <td id="durationTable">1 hrs ( 01 Normal : 00 Peak)</td>
+          </tr>
+          <tr>
+            <th>Tickets</th>
+            <th>Charges</th>
+          </tr>
+          <tr>
+            <td id="guestTable">1 Foreign Adult</td>
+
+            <td id="chargesTable">$10</td>
+          </tr>
+          <tr>
+            <th>Total Payable</th>
+            <td id="totalTable"></td>
+          </tr>
+        </table>
+      </aside>
+      <button type="submit" id="continueBtn" disabled>
+        Continue with purchase
+      </button>
+    </main>
+    <footer>
+      <div class="f-social">
+        <a href="https://twitter.com/" target="_blank"
+          ><img src="./Assets/twitter.png" alt="twitter logo"
+        /></a>
+        <a href="https://web.facebook.com/ " target="_blank"
+          ><img src="./Assets/facebook.png" alt="facebook logo"
+        /></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img src="./Assets/instagram.png" alt="instagram logo"
+        /></a>
+
+        <a href="https://www.youtube.com/" target="_blank"
+          ><img src="./Assets/youtube.png" alt="youtube logo"
+        /></a>
+      </div>
+      <div class="f-nav">
+        <a href="./index.html">Home</a>
+        <a href="./categories.html">Categories</a>
+        <a href="./Hikkaduwa_hatchery.html">Hikkaduwa</a>
+        <a href="./threats.html">Threats</a>
+        <a href="./purchase-donate.html">Store</a>
+        <a href="./purchase-donate.html£donate">Donate </a>
+      </div>
+      <div>Site by CB009832</div>
+    </footer>
+
+    <script>
+      var input = document.querySelector("#mobileNumber");
+      window.intlTelInput(input, {
+        separateDialCode: true,
+      });
+    </script>
+    <script src="./details.js"></script>
+  </body>
+</html>

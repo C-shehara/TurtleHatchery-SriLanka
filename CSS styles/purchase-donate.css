@@ -1,0 +1,125 @@
+:root {
+  --margin-s: 4rem;
+}
+hr {
+  border: 0.7rem solid var(--clr-lightblue);
+  width: 7rem;
+  margin: 0 auto 2em auto;
+}
+h1 {
+  font-size: var(--h1-size);
+}
+h2 {
+  font-size: var(--h2-size);
+}
+h3 {
+  font-size: var(--h3-size);
+}
+
+.intro {
+  background-color: var(--clr-midblue);
+}
+
+.intro-text {
+  max-width: 75ch;
+  padding: 2em 10%;
+}
+
+.intro-text h1 {
+  color: var(--clr-white);
+}
+.intro-text h1 span {
+  color: var(--clr-lightblue);
+}
+.description {
+  color: white;
+}
+.donation-options,
+.local-merchandise,
+.thank-you {
+  padding: 10%;
+}
+.donation-options {
+  background-color: var(--clr-lightblue);
+}
+
+form {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="number"] {
+  padding: 5px;
+  width: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+progress {
+  width: 100%;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.donation-option {
+  padding: 5%;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.thank-you {
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 20px;
+}
+.product-image {
+  width: 100%;
+  aspect-ratio: 1.5/2;
+  object-fit: cover;
+  margin: 0;
+}
+
+.product-description p {
+  text-align: center;
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+@media only screen and (width<481) {
+}
+@media only screen and (width>= 481px) {
+  hr {
+    margin-left: 0;
+    border-width: 0.8rem;
+  }
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (width>= 768px) {
+}
+@media only screen and (width>= 993px) {
+  .product-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (width>= 1201px) {
+}
